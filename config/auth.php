@@ -60,9 +60,13 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'professionals' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', App\Models\User::class),
+            'model' => env('PROFESSIONAL_AUTH_MODEL', App\Models\Professional::class),
+        ],
+        'pregnants' => [
+            'driver' => 'eloquent',
+            'model' => env('PREGNANT_AUTH_MODEL', App\Models\Pregnant::class),
         ],
 
         // 'users' => [
